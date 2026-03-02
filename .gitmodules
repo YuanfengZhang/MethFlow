@@ -8,8 +8,8 @@
 #     path = resources/aryana
 #     url = https://github.com/hnikaein/aryana.git
 [submodule "resources/BatMeth2"]
-    path = resources/BatMeth2
-    url = https://github.com/GuoliangLi-HZAU/BatMeth2.git
+	path = resources/BatMeth2
+	url = https://github.com/GuoliangLi-HZAU/BatMeth2.git
 [submodule "resources/bsgenova"]
 	path = resources/bsgenova
 	url = https://github.com/YuanfengZhang/bsgenova.git
@@ -27,8 +27,8 @@
 #     path = resources/hisat2
 #     url = https://github.com/DaehwanKimLab/hisat2.git
 [submodule "resources/hisat-3n"]
-    path = resources/hisat-3n
-    url = https://github.com/DaehwanKimLab/hisat2.git
+	path = resources/hisat-3n
+	url = https://github.com/DaehwanKimLab/hisat2.git
 	branch = hisat-3n
 
 # lastz removed sicne it's way too slow and
@@ -54,11 +54,11 @@
 #	url = https://bitbucket.org/bsblabludwig/rastair
 
 [submodule "resources/Whisper"]
-    path = resources/Whisper
-    url = https://github.com/refresh-bio/Whisper.git
+	path = resources/Whisper
+	url = https://github.com/refresh-bio/Whisper.git
 [submodule "resources/BioSeqZip"]
-    path = resources/BioSeqZip
-    url = https://github.com/bioinformatics-polito/BioSeqZip
+	path = resources/BioSeqZip
+	url = https://github.com/bioinformatics-polito/BioSeqZip.git
 
 # removed since it's too slow in pre-experiment.
 # [submodule "resources/ngsreadstreatment"]

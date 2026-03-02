@@ -60,22 +60,21 @@ NOTES:
 EOF
 }
 
-# Install abismal
+# Install abismal (download pre-compiled release)
 install_abismal() {
-    log_info "Compiling abismal..."
-    cd "$RESOURCES_DIR/abismal"
+    log_info "Downloading abismal pre-compiled release..."
+    cd "$RESOURCES_DIR"
     
-    if [ -d "build" ] && [ -f "build/abismal" ]; then
-        log_warn "abismal already compiled, skipping..."
+    if [ -d "abismal" ] && [ -f "abismal/bin/abismal" ]; then
+        log_warn "abismal already installed, skipping..."
         return
     fi
     
-    mkdir -p build
-    cd build
-    ../configure --prefix="$RESOURCES_DIR/abismal"
-    make -j$(nproc)
-    make install
-    log_info "abismal compiled successfully!"
+    wget -q https://github.com/smithlabcode/abismal/releases/download/v3.2.4/abismal-3.2.4.tar.gz
+    tar -zxf abismal-3.2.4.tar.gz
+    mv abismal-3.2.4 abismal
+    rm -f abismal-3.2.4.tar.gz
+    log_info "abismal installed successfully! (Pre-compiled release)"
 }
 
 # Install BatMeth2
