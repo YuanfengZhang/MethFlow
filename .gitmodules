@@ -1,6 +1,7 @@
-[submodule "resources/abismal"]
-    path = resources/abismal
-    url = https://github.com/smithlabcode/abismal.git
+# abismal uses pre-compiled release, no need for submodule
+# [submodule "resources/abismal"]
+#     path = resources/abismal
+#     url = https://github.com/smithlabcode/abismal.git
 
 # removed because of bad performance during pre-experiment.
 # [submodule "resources/aryana"]
@@ -14,10 +15,12 @@
 	url = https://github.com/YuanfengZhang/bsgenova.git
 [submodule "resources/FAME"]
 	path = resources/FAME
-	url = git@github.com:YuanfengZhang/FAME.git
-[submodule "resources/gem3-mapper"]
-    path = resources/gem3-mapper
-    url = https://github.com/smarco/gem3-mapper.git
+	url = https://github.com/YuanfengZhang/FAME.git
+
+# gem3-mapper not included in the study
+# [submodule "resources/gem3-mapper"]
+#     path = resources/gem3-mapper
+#     url = https://github.com/smarco/gem3-mapper.git
 
 # removed because of nearly identical results with bowtie2
 # [submodule "resources/hisat2"]
@@ -45,9 +48,11 @@
 #     path = resources/pufferfish
 #     url = https://github.com/COMBINE-lab/pufferfish.git
 # 	branch = develop
-[submodule "resources/rastair"]
-	path = resources/rastair
-	url = https://bitbucket.org/bsblabludwig/rastair
+# rastair uses pre-compiled binary, no need for submodule
+# [submodule "resources/rastair"]
+#	path = resources/rastair
+#	url = https://bitbucket.org/bsblabludwig/rastair
+
 [submodule "resources/Whisper"]
     path = resources/Whisper
     url = https://github.com/refresh-bio/Whisper.git

@@ -23,7 +23,7 @@ While the snakemake and python scripts are compatible with most operating system
     ```bash
     git clone https://github.com/YuanfengZhang/dna_methylation_smk --recurse-submodules
     ```
-4. Install and compile the third-party tools, including abismal, aryana, BatMeth2, bsgenova, FAME, gem3-mapper, hisat2, hisat-3n, last-split-pe, Msuite2, pufferfish, rastair, Whisper, BioSeqZip, ngsreadstreatment, TrieDedup, CARE, and so on.
+4. Install and compile the third-party tools: abismal, BatMeth2, bsgenova, FAME, hisat-3n, Whisper, BioSeqZip, and rastair.
 5. Modify the `config/runtime_config.yaml` to set the paths of the files and parameters required by third-party tools.
 6. Fill the sample sheet csv file according to the format described in `utils/sample_sheet_parser.py` and `config/sample_sheet.csv`.
 7. Run the snakemake pipelines, e.g.:
