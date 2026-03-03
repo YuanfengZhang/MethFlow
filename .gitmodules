@@ -78,3 +78,6 @@
 #     path = resources/CARE
 #     url = https://github.com/fkallen/CARE
 
+[submodule "resources/RECKONER"]
+	path = resources/RECKONER
+	url = https://github.com/refresh-bio/RECKONER
