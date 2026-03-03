@@ -60,7 +60,8 @@
 
 [submodule "resources/BioSeqZip"]
 	path = resources/BioSeqZip
-	url = https://github.com/bioinformatics-polito/BioSeqZip.git
+	url = https://github.com/YuanfengZhang/BioSeqZip.git
+	branch = master
 
 # removed since it's too slow in pre-experiment.
 # [submodule "resources/ngsreadstreatment"]
