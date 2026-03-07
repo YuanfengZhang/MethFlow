@@ -81,3 +81,6 @@
 [submodule "resources/RECKONER"]
 	path = resources/RECKONER
 	url = https://github.com/refresh-bio/RECKONER
+[submodule "resources/gem3-mapper"]
+	path = resources/gem3-mapper
+	url = https://github.com/smarco/gem3-mapper.git
