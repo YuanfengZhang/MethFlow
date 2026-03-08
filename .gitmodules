@@ -22,10 +22,6 @@
 #     path = resources/gem3-mapper
 #     url = https://github.com/smarco/gem3-mapper.git
 
-# removed because of nearly identical results with bowtie2
-# [submodule "resources/hisat2"]
-#     path = resources/hisat2
-#     url = https://github.com/DaehwanKimLab/hisat2.git
 [submodule "resources/hisat-3n"]
 	path = resources/hisat-3n
 	url = https://github.com/DaehwanKimLab/hisat2.git
@@ -53,10 +49,9 @@
 #	path = resources/rastair
 #	url = https://bitbucket.org/bsblabludwig/rastair
 
-# Whisper uses pre-compiled binary, no need for submodule
-# [submodule "resources/Whisper"]
-#	path = resources/Whisper
-#	url = https://github.com/refresh-bio/Whisper.git
+[submodule "resources/Whisper"]
+	path = resources/Whisper
+	url = https://github.com/refresh-bio/Whisper.git
 
 [submodule "resources/BioSeqZip"]
 	path = resources/BioSeqZip
@@ -84,3 +79,6 @@
 [submodule "resources/gem3-mapper"]
 	path = resources/gem3-mapper
 	url = https://github.com/smarco/gem3-mapper.git
+[submodule "resources/hisat2"]
+	path = resources/hisat2
+	url = https://github.com/DaehwanKimLab/hisat2.git
