@@ -435,17 +435,17 @@ ref:
       NEAR: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/custom_genomes/D5_IC/last/D5_NEAR
   
   msuite2:
-    BL: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/dna_methylation_smk/resources/Msuite2/index/BL
-    D6: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/dna_methylation_smk/resources/Msuite2/index/BL
-    F7: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/dna_methylation_smk/resources/Msuite2/index/BL
-    M8: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/dna_methylation_smk/resources/Msuite2/index/BL
-    BC: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/dna_methylation_smk/resources/Msuite2/index/BL
-    BL: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/dna_methylation_smk/resources/Msuite2/index/BL
-    HF: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/dna_methylation_smk/resources/Msuite2/index/BL
-    T1: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/dna_methylation_smk/resources/Msuite2/index/BL
-    T2: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/dna_methylation_smk/resources/Msuite2/index/BL
-    T3: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/dna_methylation_smk/resources/Msuite2/index/BL
-    T4: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/dna_methylation_smk/resources/Msuite2/index/BL
+    BL: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/MethFlow/resources/Msuite2/index/BL
+    D6: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/MethFlow/resources/Msuite2/index/BL
+    F7: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/MethFlow/resources/Msuite2/index/BL
+    M8: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/MethFlow/resources/Msuite2/index/BL
+    BC: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/MethFlow/resources/Msuite2/index/BL
+    BL: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/MethFlow/resources/Msuite2/index/BL
+    HF: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/MethFlow/resources/Msuite2/index/BL
+    T1: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/MethFlow/resources/Msuite2/index/BL
+    T2: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/MethFlow/resources/Msuite2/index/BL
+    T3: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/MethFlow/resources/Msuite2/index/BL
+    T4: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/eqa/MethFlow/resources/Msuite2/index/BL
   pufferfish:
     BL: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/custom_genomes/BL_IC/pufferfish
     D6: /cpfs01/projects-HDD/cfff-e44ef5cf7aa5_HDD/gxr_22210700111/custom_genomes/BL_IC/pufferfish

@@ -1,0 +1,11 @@
+FNAME,TRIMMER,FASTQCER,ALIGNER,DEDUPER,CALIBRATOR,COUNTER,STATS
+BS1_BL_1,fastp,falco,batmeth2,gencore,gatk-cali,astair,True
+BS1_BL_1,trim-galore,fastqc,bowtie2,sambamba,lighter,biscuit,True
+BS1_BL_1,fastp,falco,bsmapz,samtools,gatk-cali,bitmapperbs,True
+BS1_BL_1,trim-galore,fastqc,bwa-meme,gencore,lighter,bsgenova,True
+BS1_BL_1,fastp,falco,bwa-meth,sambamba,gatk-cali,dnmtools,True
+BS1_BL_1,trim-galore,fastqc,gem3,samtools,lighter,methyldackel,True
+BS1_BL_1,fastp,falco,strobealign,gencore,gatk-cali,astair,True
+BS1_BL_1,fastp,falco,bsbolt,gencore,gatk-cali,astair,True
+BS1_BL_1,fastp,fastqc,bismark-bowtie2,bismark-dedup,gatk-cali,bismark,True
+BS1_BL_1,fastp,fastqc,,,,fame,False

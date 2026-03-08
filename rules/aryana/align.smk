@@ -14,7 +14,7 @@ aryana_bs \
     /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/aryana \
     /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.cgi.bed \
     merged.fq.gz \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/aryana \
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/aryana \
     ar="-p 12"
 """
 

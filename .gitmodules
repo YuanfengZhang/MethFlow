@@ -1,53 +1,80 @@
-[submodule "resources/abismal"]
-    path = resources/abismal
-    url = https://github.com/smithlabcode/abismal.git
-[submodule "resources/aryana"]
-    path = resources/aryana
-    url = https://github.com/hnikaein/aryana.git
+# abismal uses pre-compiled release, no need for submodule
+# [submodule "resources/abismal"]
+#     path = resources/abismal
+#     url = https://github.com/smithlabcode/abismal.git
+
+# removed because of bad performance during pre-experiment.
+# [submodule "resources/aryana"]
+#     path = resources/aryana
+#     url = https://github.com/hnikaein/aryana.git
 [submodule "resources/BatMeth2"]
-    path = resources/BatMeth2
-    url = https://github.com/GuoliangLi-HZAU/BatMeth2.git
+	path = resources/BatMeth2
+	url = https://github.com/GuoliangLi-HZAU/BatMeth2.git
 [submodule "resources/bsgenova"]
 	path = resources/bsgenova
 	url = https://github.com/YuanfengZhang/bsgenova.git
 [submodule "resources/FAME"]
 	path = resources/FAME
-	url = git@github.com:YuanfengZhang/FAME.git
-[submodule "resources/gem3-mapper"]
-    path = resources/gem3-mapper
-    url = https://github.com/smarco/gem3-mapper.git
-[submodule "resources/hisat2"]
-    path = resources/hisat2
-    url = https://github.com/DaehwanKimLab/hisat2.git
+	url = https://github.com/YuanfengZhang/FAME.git
+
+# gem3-mapper not included in the study
+# [submodule "resources/gem3-mapper"]
+#     path = resources/gem3-mapper
+#     url = https://github.com/smarco/gem3-mapper.git
+
 [submodule "resources/hisat-3n"]
-    path = resources/hisat-3n
-    url = https://github.com/DaehwanKimLab/hisat2.git
+	path = resources/hisat-3n
+	url = https://github.com/DaehwanKimLab/hisat2.git
 	branch = hisat-3n
-[submodule "resources/last-split-pe"]
-    path = resources/last-split-pe
-    url = https://bitbucket.org/splitpairedend/last-split-pe
-[submodule "resources/Msuite2"]
-	path = resources/Msuite2
-	url = git@github.com:YuanfengZhang/Msuite2.git
-[submodule "resources/pufferfish"]
-    path = resources/pufferfish
-    url = https://github.com/COMBINE-lab/pufferfish.git
-	branch = develop
-[submodule "resources/rastair"]
-	path = resources/rastair
-	url = https://bitbucket.org/bsblabludwig/rastair
-[submodule "resources/Whisper"]
-    path = resources/Whisper
-    url = https://github.com/refresh-bio/Whisper.git
+
+# lastz removed sicne it's way too slow and
+# the author of lastz did not recommend us to include it this way.
+# [submodule "resources/last-split-pe"]
+#     path = resources/last-split-pe
+#     url = https://bitbucket.org/splitpairedend/last-split-pe
+
+# removed since it's overlapped with bismark, bowtie2, hisat2, hisat-3n
+# [submodule "resources/Msuite2"]
+# 	path = resources/Msuite2
+# 	url = git@github.com:YuanfengZhang/Msuite2.git
+
+# removed since we failed compling it in Ubuntu 22.04 / 24.04 docker image
+# after ~2 weeks' trying.
+# [submodule "resources/pufferfish"]
+#     path = resources/pufferfish
+#     url = https://github.com/COMBINE-lab/pufferfish.git
+# 	branch = develop
+# rastair uses pre-compiled binary, no need for submodule
+# [submodule "resources/rastair"]
+#	path = resources/rastair
+#	url = https://bitbucket.org/bsblabludwig/rastair
+
 [submodule "resources/BioSeqZip"]
-    path = resources/BioSeqZip
-    url = https://github.com/bioinformatics-polito/BioSeqZip
-[submodule "resources/ngsreadstreatment"]
-    path = resources/ngsreadstreatment
-    url = https://github.com/allanverasce/ngsreadstreatment
-[submodule "resources/TrieDedup"]
-    path = resources/TrieDedup
-    url = https://github.com/lolrenceH/TrieDedup
-[submodule "resources/CARE"]
-    path = resources/CARE
-    url = https://github.com/fkallen/CARE
+	path = resources/BioSeqZip
+	url = https://github.com/YuanfengZhang/BioSeqZip.git
+	branch = master
+
+# removed since it's too slow in pre-experiment.
+# [submodule "resources/ngsreadstreatment"]
+#     path = resources/ngsreadstreatment
+#     url = https://github.com/allanverasce/ngsreadstreatment
+
+# removed since it does not support mainstream paired-end data.
+# [submodule "resources/TrieDedup"]
+#     path = resources/TrieDedup
+#     url = https://github.com/lolrenceH/TrieDedup
+
+# removed since it requires too much RAM, beyond our quota on computing cluster.
+# [submodule "resources/CARE"]
+#     path = resources/CARE
+#     url = https://github.com/fkallen/CARE
+
+[submodule "resources/RECKONER"]
+	path = resources/RECKONER
+	url = https://github.com/refresh-bio/RECKONER
+[submodule "resources/gem3-mapper"]
+	path = resources/gem3-mapper
+	url = https://github.com/smarco/gem3-mapper.git
+[submodule "resources/hisat2"]
+	path = resources/hisat2
+	url = https://github.com/DaehwanKimLab/hisat2.git

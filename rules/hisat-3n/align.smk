@@ -19,9 +19,9 @@ time hisat-3n-build \
 hisat-3n \
     --index /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_c2t \
     -q \
-    -1 /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R1.fq.gz \
-    -2 /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R2.fq.gz \
-    -S /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/hisat3n.sam \
+    -1 /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R1.fq.gz \
+    -2 /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R2.fq.gz \
+    -S /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/hisat3n.sam \
     --base-change C,T --sensitive \
     --rg-id ID:1 \
     --rg SM:sample1 \

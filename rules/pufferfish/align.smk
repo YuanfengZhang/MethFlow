@@ -6,9 +6,9 @@ from textwrap import dedent
 pufferfish index -r ./BL.fa -o . -p 16
 pufferfish align \
     -i /hot_warm_data/ref/quartet/DNA/custom_genome/BL/pufferfish \
-    --mate1 /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R1.fq.gz \
-    --mate2 /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R2.fq.gz \
-    -o /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/pufferfish.sam \
+    --mate1 /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R1.fq.gz \
+    --mate2 /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R2.fq.gz \
+    -o /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/pufferfish.sam \
     --threads 16 \
     --allowSoftclip --allowOverhangSoftclip \
     --writeQualities --verbose --genomicReads

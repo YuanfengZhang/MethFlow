@@ -31,7 +31,7 @@ PIPELINE_CODING: dict[str, dict[str, str]] = {
         'dupsifter': '9', 'gencore': 'A', 'minirmd': 'B', 'gatk-optical': 'C'
     },
     'CALIBRATOR': {
-        'no-pre-calibrate': '@', 'no-calibrate': '0', 'gatk-cali': '1', 'care': '2',
+        'no-pre-calibrate': '@', 'no-calibrate': '0', 'gatk-cali': '1', 'gatk': '1', 'care': '2',
         'lighter': '3', 'reckoner': '4'
     },
     'COUNTER': {

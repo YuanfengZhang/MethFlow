@@ -5,8 +5,8 @@ from textwrap import dedent
 """
 hisat2-build BL.fa BL
 hisat2 -x /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat2/BL \
-    -1 /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R1.fq.gz \
-    -2 /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R2.fq.gz \
+    -1 /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R1.fq.gz \
+    -2 /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R2.fq.gz \
     -q --sensitive \
     --rg-id ID:1 \
     --rg SM:sample1 \

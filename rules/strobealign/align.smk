@@ -6,13 +6,13 @@ from textwrap import dedent
 strobealign --create-index BL.fa -t 16 -r 150
 strobealign \
     /hot_warm_data/ref/quartet/DNA/custom_genome/BL/strobealign/BL.fa \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R1.fq.gz \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R2.fq.gz \
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R1.fq.gz \
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R2.fq.gz \
     --use-index --mcs -t 24 \
     --rg-id ID:1 --rg SM:sample1 --rg PL:ILLUMINA --rg PU:unit1 --rg LB:lib1 |\
 samtools sort \
     --output-fmt bam,level=9 \
-    -@ 24 >/mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/strobealign.bam
+    -@ 24 >/mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/strobealign.bam
 """
 
 
