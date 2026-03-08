@@ -3,85 +3,85 @@ from textwrap import dedent
 
 
 """
-export PATH=/mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/resources/last-split-pe/src:$PATH
-export PATH=/mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/resources/last-split-pe/script:$PATH
+export PATH=/mnt/eqa/zhangyuanfeng/methylation/MethFlow/resources/last-split-pe/src:$PATH
+export PATH=/mnt/eqa/zhangyuanfeng/methylation/MethFlow/resources/last-split-pe/script:$PATH
 
 lastdb -c -u BISF -P 64 BL_BISF BL.fa
 lastdb -c -u BISR -P 64 BL_BISR BL.fa &
 lastdb -c -u NEAR -P 64 BL_NEAR BL.fa & wait
 
 time fastq-interleave \
-   /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM.R1.fq.gz \
-   /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM.R2.fq.gz |\
-   > /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM.fq
+   /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM.R1.fq.gz \
+   /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM.R2.fq.gz |\
+   > /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM.fq
 
 time seqtk sample \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM.fq \
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM.fq \
     20000 \
-    > /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM_n20000.fq
+    > /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM_n20000.fq
 
 # no -P param nor mbuffer because of nearly no improvement
 time lastal \
     -Q1 -D 1000 -i 1 \
     /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISF \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM_n20000.fq |\
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM_n20000.fq |\
     last-pair-probs -e > \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.BISF.probs
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.BISF.probs
 BISF_M=$(grep \
             "estimated mean distance" \
-            /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.BISF.probs |\
+            /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.BISF.probs |\
             awk -F': ' '{print $2}')
 BISF_S=$(grep \
             "estimated standard deviation" \
-            /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.BISF.probs |\
+            /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.BISF.probs |\
             awk -F': ' '{print $2}')
 
 time lastal \
     -Q1 -D 1000 -i 1 \
     /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISR \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM_n20000.fq |\
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM_n20000.fq |\
     last-pair-probs -e > \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.BISR.probs
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.BISR.probs
 BISR_M=$(grep \
             "estimated mean distance" \
-            /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.BISR.probs |\
+            /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.BISR.probs |\
             awk -F': ' '{print $2}')
 BISR_S=$(grep \
             "estimated standard deviation" \
-            /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.BISR.probs |\
+            /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.BISR.probs |\
             awk -F': ' '{print $2}')
 
 time lastal \
     -Q1 -D 1000 -i 1 \
     /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_NEAR \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM_n20000.fq |\
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM_n20000.fq |\
     last-pair-probs -e > \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.NEAR.probs
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.NEAR.probs
 NEAR_M=$(grep \
             "estimated mean distance" \
-            /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.NEAR.probs |\
+            /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.NEAR.probs |\
             awk -F': ' '{print $2}')
 NEAR_S=$(grep \
             "estimated standard deviation" \
-            /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.NEAR.probs |\
+            /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.NEAR.probs |\
             awk -F': ' '{print $2}')
 
 last-train \
     --sample-number 20000 -P 64 -X 1 -Q1 \
     /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISF \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM.fq \
-    > /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM_BISF.train
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM.fq \
+    > /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM_BISF.train
 last-train \
     --sample-number 20000 -P 64 -X 1 -Q1 \
     /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISR \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM.fq \
-    > /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM_BISR.train &
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM.fq \
+    > /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM_BISR.train &
 
 last-train \
     --sample-number 20000 -P 64 -X 1 -Q1 \
     /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_NEAR \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM.fq \
-    > /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM_NEAR.train & wait
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM.fq \
+    > /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM_NEAR.train & wait
 
 parallel \
     --gnu \
@@ -90,15 +90,15 @@ parallel \
     -L64 -j64 \
     "lastal \
     -Q1 -i1 -C 2 \
-    -p /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM_BISF.train \
+    -p /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM_BISF.train \
     /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISF |\
      last-split -m 0.9 -d 2 -n -fMAF+ |\
-     /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/resources/last-split-pe/src/last-split-pe \
+     /mnt/eqa/zhangyuanfeng/methylation/MethFlow/resources/last-split-pe/src/last-split-pe \
      -f ${BISF_M} -s ${BISF_S} " \
-     < /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM.fq |\
+     < /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM.fq |\
      mbuffer -m 4G -q |\
      samtools sort -n - |\
-     > /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.BISF.sam
+     > /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.BISF.sam
 
 parallel \
     --gnu \
@@ -106,14 +106,14 @@ parallel \
     -L64 -j64 \
     "lastal \
     -Q1 -i1 -C 2 \
-    -p /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM_BISR.train \
+    -p /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM_BISR.train \
     /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISR |\
      last-split -m 0.9 -d 2 -n -fMAF+ |\
-     /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/resources/last-split-pe/src/last-split-pe \
+     /mnt/eqa/zhangyuanfeng/methylation/MethFlow/resources/last-split-pe/src/last-split-pe \
      -f ${BISR_M} -s ${BISR_S} " \
-     < /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM.fq |\
+     < /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM.fq |\
      mbuffer -m 4G -q \
-     > /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.BISR.sam
+     > /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.BISR.sam
 
 parallel \
     --gnu \
@@ -121,26 +121,26 @@ parallel \
     -L64 -j64 \
     "lastal \
     -Q1 -i1 -C 2 \
-    -p /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM_NEAR.train \
+    -p /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM_NEAR.train \
     /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_NEAR |\
      last-split -m 0.9 -d 2 -n -fMAF+ |\
-     /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/resources/last-split-pe/src/last-split-pe \
+     /mnt/eqa/zhangyuanfeng/methylation/MethFlow/resources/last-split-pe/src/last-split-pe \
      -f ${NEAR_M} -s ${NEAR_S} " \
-     < /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM.fq |\
+     < /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM.fq |\
      mbuffer -m 4G -q \
-     > /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.NEAR.sam
+     > /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.NEAR.sam
 
 python \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/resources/last-split-pe/scripts/printSamHeader.py \
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/resources/last-split-pe/scripts/printSamHeader.py \
     /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL.fa \
-    > /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/header.sam
+    > /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/header.sam
 
 python \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/rules/last/merge.py \
-    --bisf /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.BISF.sam \
-    --bisr /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.BISR.sam \
-    --near /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/EM_HF_1_IPM.NEAR.sam \
-    --sam_tmp /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/last/sam.tmp
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/rules/last/merge.py \
+    --bisf /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.BISF.sam \
+    --bisr /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.BISR.sam \
+    --near /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/EM_HF_1_IPM.NEAR.sam \
+    --sam_tmp /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/last/sam.tmp
 
 cat header.sam sam.tmp | samtools sort --output-fmt bam,level=9 > EM_HF_1_IPM.bam
 

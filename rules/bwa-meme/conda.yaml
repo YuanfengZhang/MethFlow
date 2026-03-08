@@ -4,5 +4,5 @@ channels:
   - defaults
 dependencies:
   - bioconda::bwa-meme>=1.0.6
-  - bioconda::samtools>=1.22
+  - bioconda::samtools
   - bioconda::mbuffer

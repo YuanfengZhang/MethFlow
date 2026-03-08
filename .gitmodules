@@ -49,10 +49,6 @@
 #	path = resources/rastair
 #	url = https://bitbucket.org/bsblabludwig/rastair
 
-[submodule "resources/Whisper"]
-	path = resources/Whisper
-	url = https://github.com/refresh-bio/Whisper.git
-
 [submodule "resources/BioSeqZip"]
 	path = resources/BioSeqZip
 	url = https://github.com/YuanfengZhang/BioSeqZip.git

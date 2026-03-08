@@ -5,10 +5,10 @@ bitmapperBS --index BL.fa
 bitmapperBS search \\
     -t 8 --sensitive \\
     --search /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BitMapperBS/BL.fa \\
-    --seq1 /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R1.fq.gz \\
-    --seq2 /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R2.fq.gz |\\
+    --seq1 /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R1.fq.gz \\
+    --seq2 /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R2.fq.gz |\\
     samtools sort -O bam \\
-    -o /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/biitmapperbs.bam
+    -o /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/biitmapperbs.bam
 """
 
 

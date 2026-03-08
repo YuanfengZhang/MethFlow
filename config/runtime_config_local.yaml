@@ -1,0 +1,759 @@
+input_dir: input
+
+#! this part is used to specify the reference genome file to be used
+ref:
+  abismal:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/abismal/BL.abismal_index
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/abismal/BL.abismal_index
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/abismal/BL.abismal_index
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/abismal/BL.abismal_index
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/abismal/BL.abismal_index
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/abismal/BL.abismal_index
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/abismal/BL.abismal_index
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/abismal/BL.abismal_index
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/abismal/BL.abismal_index
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/abismal/BL.abismal_index
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/abismal/BL.abismal_index
+  astair:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+  aryana:
+      D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.fa /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/aryana /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.cgi.bed
+      D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.fa /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/aryana /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.cgi.bed
+      F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.fa /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/aryana /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.cgi.bed
+      M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.fa /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/aryana /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.cgi.bed
+      BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.fa /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/aryana /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.cgi.bed
+      BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.fa /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/aryana /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.cgi.bed
+      HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.fa /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/aryana /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.cgi.bed
+      T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.fa /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/aryana /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.cgi.bed
+      T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.fa /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/aryana /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.cgi.bed
+      T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.fa /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/aryana /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.cgi.bed
+      T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.fa /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/aryana /hot_warm_data/ref/quartet/DNA/custom_genome/BL/aryana/BL.cgi.bed
+  batmeth2:
+    default:
+      D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/BL.fa
+      D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/BL.fa
+      F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/BL.fa
+      M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/BL.fa
+      BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/BL.fa
+      BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/BL.fa
+      HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/BL.fa
+      T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/BL.fa
+      T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/BL.fa
+      T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/BL.fa
+      T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/BL.fa
+    RRBS:
+      D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/RRBS/BL.fa
+      D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/RRBS/BL.fa
+      F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/RRBS/BL.fa
+      M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/RRBS/BL.fa
+      BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/RRBS/BL.fa
+      BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/RRBS/BL.fa
+      HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/RRBS/BL.fa
+      T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/RRBS/BL.fa
+      T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/RRBS/BL.fa
+      T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/RRBS/BL.fa
+      T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/RRBS/BL.fa
+  bismark-bowtie2:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-bowtie2
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-bowtie2
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-bowtie2
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-bowtie2
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-bowtie2
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-bowtie2
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-bowtie2
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-bowtie2
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-bowtie2
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-bowtie2
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-bowtie2
+  bismark-hisat2:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-hisat2
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-hisat2
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-hisat2
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-hisat2
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-hisat2
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-hisat2
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-hisat2
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-hisat2
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-hisat2
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-hisat2
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bismark-hisat2
+  biscuit:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/biscuit/BL.fa
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/biscuit/BL.fa
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/biscuit/BL.fa
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/biscuit/BL.fa
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/biscuit/BL.fa
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/biscuit/BL.fa
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/biscuit/BL.fa
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/biscuit/BL.fa
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/biscuit/BL.fa
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/biscuit/BL.fa
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/biscuit/BL.fa
+  bitmapperbs:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BitMapperBS/BL.fa
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BitMapperBS/BL.fa
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BitMapperBS/BL.fa
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BitMapperBS/BL.fa
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BitMapperBS/BL.fa
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BitMapperBS/BL.fa
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BitMapperBS/BL.fa
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BitMapperBS/BL.fa
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BitMapperBS/BL.fa
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BitMapperBS/BL.fa
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BitMapperBS/BL.fa
+  bowtie2:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bowtie2/BL
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bowtie2/BL
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bowtie2/BL
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bowtie2/BL
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bowtie2/BL
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bowtie2/BL
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bowtie2/BL
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bowtie2/BL
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bowtie2/BL
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bowtie2/BL
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bowtie2/BL
+  bsgenova:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/samtools/BL.fa
+  bsmapz:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bsmapz/BL.fa
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bsmapz/BL.fa
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bsmapz/BL.fa
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bsmapz/BL.fa
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bsmapz/BL.fa
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bsmapz/BL.fa
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bsmapz/BL.fa
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bsmapz/BL.fa
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bsmapz/BL.fa
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bsmapz/BL.fa
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bsmapz/BL.fa
+  bsbolt:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BSBolt
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BSBolt
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BSBolt
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BSBolt
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BSBolt
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BSBolt
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BSBolt
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BSBolt
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BSBolt
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BSBolt
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BSBolt
+  bwa-mem:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+  bwa-meme:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meme/BL.fa
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meme/BL.fa
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meme/BL.fa
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meme/BL.fa
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meme/BL.fa
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meme/BL.fa
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meme/BL.fa
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meme/BL.fa
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meme/BL.fa
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meme/BL.fa
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meme/BL.fa
+  dupsifter:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/dupsifter/BL.fa
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/dupsifter/BL.fa
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/dupsifter/BL.fa
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/dupsifter/BL.fa
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/dupsifter/BL.fa
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/dupsifter/BL.fa
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/dupsifter/BL.fa
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/dupsifter/BL.fa
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/dupsifter/BL.fa
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/dupsifter/BL.fa
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/dupsifter/BL.fa
+  bwa-meth:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meth/BL.fa
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meth/BL.fa
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meth/BL.fa
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meth/BL.fa
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meth/BL.fa
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meth/BL.fa
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meth/BL.fa
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meth/BL.fa
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meth/BL.fa
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meth/BL.fa
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-meth/BL.fa
+  deepvariant:
+    ref_dir:
+      D5: /hot_warm_data/ref/quartet/DNA/custom_genome
+      D6: /hot_warm_data/ref/quartet/DNA/custom_genome
+      F7: /hot_warm_data/ref/quartet/DNA/custom_genome
+      M8: /hot_warm_data/ref/quartet/DNA/custom_genome
+      BC: /hot_warm_data/ref/quartet/DNA/custom_genome
+      BL: /hot_warm_data/ref/quartet/DNA/custom_genome
+      HF: /hot_warm_data/ref/quartet/DNA/custom_genome
+      T1: /hot_warm_data/ref/quartet/DNA/custom_genome
+      T2: /hot_warm_data/ref/quartet/DNA/custom_genome
+      T3: /hot_warm_data/ref/quartet/DNA/custom_genome
+      T4: /hot_warm_data/ref/quartet/DNA/custom_genome
+    ref_name:
+      D5: BL.fa
+      D6: BL.fa
+      F7: BL.fa
+      M8: BL.fa
+      BC: BL.fa
+      BL: BL.fa
+      HF: BL.fa
+      T1: BL.fa
+      T2: BL.fa
+      T3: BL.fa
+      T4: BL.fa
+  epiallele:
+    ref_dir:
+      D5: /hot_warm_data/ref/quartet/DNA/custom_genome
+      D6: /hot_warm_data/ref/quartet/DNA/custom_genome
+      F7: /hot_warm_data/ref/quartet/DNA/custom_genome
+      M8: /hot_warm_data/ref/quartet/DNA/custom_genome
+      BC: /hot_warm_data/ref/quartet/DNA/custom_genome
+      BL: /hot_warm_data/ref/quartet/DNA/custom_genome
+      HF: /hot_warm_data/ref/quartet/DNA/custom_genome
+      T1: /hot_warm_data/ref/quartet/DNA/custom_genome
+      T2: /hot_warm_data/ref/quartet/DNA/custom_genome
+      T3: /hot_warm_data/ref/quartet/DNA/custom_genome
+      T4: /hot_warm_data/ref/quartet/DNA/custom_genome
+    ref_name:
+      D5: BL.fa
+      D6: BL.fa
+      F7: BL.fa
+      M8: BL.fa
+      BC: BL.fa
+      BL: BL.fa
+      HF: BL.fa
+      T1: BL.fa
+      T2: BL.fa
+      T3: BL.fa
+      T4: BL.fa
+  fame:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/FAME/BL.fa
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/FAME/BL.fa
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/FAME/BL.fa
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/FAME/BL.fa
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/FAME/BL.fa
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/FAME/BL.fa
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/FAME/BL.fa
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/FAME/BL.fa
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/FAME/BL.fa
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/FAME/BL.fa
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/FAME/BL.fa
+  gatk:
+    fasta:
+      D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.fa
+      D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.fa
+      F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.fa
+      M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.fa
+      BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.fa
+      BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.fa
+      HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.fa
+      T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.fa
+      T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.fa
+      T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.fa
+      T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.fa
+    dict:
+      D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.dict
+      D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.dict
+      F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.dict
+      M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.dict
+      BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.dict
+      BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.dict
+      HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.dict
+      T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.dict
+      T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.dict
+      T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.dict
+      T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gatk/BL.dict
+  gem3:
+    original:
+      D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL.gem
+      D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL.gem
+      F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL.gem
+      M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL.gem
+      BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL.gem
+      BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL.gem
+      HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL.gem
+      T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL.gem
+      T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL.gem
+      T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL.gem
+      T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL.gem
+    bisulfite:
+      D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL_bisulfite.gem
+      D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL_bisulfite.gem
+      F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL_bisulfite.gem
+      M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL_bisulfite.gem
+      BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL_bisulfite.gem
+      BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL_bisulfite.gem
+      HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL_bisulfite.gem
+      T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL_bisulfite.gem
+      T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL_bisulfite.gem
+      T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL_bisulfite.gem
+      T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL_bisulfite.gem
+  gencore:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gencore/BL.fa
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gencore/BL.fa
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gencore/BL.fa
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gencore/BL.fa
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gencore/BL.fa
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gencore/BL.fa
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gencore/BL.fa
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gencore/BL.fa
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gencore/BL.fa
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gencore/BL.fa
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gencore/BL.fa
+  hisat-3n:
+    D5:
+     c2t: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_c2t
+     t2c: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_t2c
+    D6:
+     c2t: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_c2t
+     t2c: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_t2c
+    F7:
+     c2t: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_c2t
+     t2c: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_t2c
+    M8:
+     c2t: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_c2t
+     t2c: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_t2c
+    BC:
+     c2t: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_c2t
+     t2c: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_t2c
+    BL:
+     c2t: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_c2t
+     t2c: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_t2c
+    HF:
+     c2t: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_c2t
+     t2c: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_t2c
+    T1:
+     c2t: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_c2t
+     t2c: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_t2c
+    T2:
+     c2t: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_c2t
+     t2c: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_t2c
+    T3:
+     c2t: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_c2t
+     t2c: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_t2c
+    T4:
+     c2t: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_c2t
+     t2c: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat-3n/BL_t2c
+  hisat2:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat2/BL
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat2/BL
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat2/BL
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat2/BL
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat2/BL
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat2/BL
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat2/BL
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat2/BL
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat2/BL
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat2/BL
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/hisat2/BL
+  last:
+    D5:
+      fasta: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL.fa
+      BISF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISF
+      BISR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISR
+      NEAR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_NEAR
+    D6:
+      fasta: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL.fa
+      BISF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISF
+      BISR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISR
+      NEAR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_NEAR
+    F7:
+      fasta: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL.fa
+      BISF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISF
+      BISR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISR
+      NEAR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_NEAR
+    M8:
+      fasta: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL.fa
+      BISF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISF
+      BISR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISR
+      NEAR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_NEAR
+    BC:
+      fasta: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL.fa
+      BISF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISF
+      BISR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISR
+      NEAR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_NEAR
+    BL:
+      fasta: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL.fa
+      BISF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISF
+      BISR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISR
+      NEAR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_NEAR
+    HF:
+      fasta: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL.fa
+      BISF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISF
+      BISR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISR
+      NEAR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_NEAR
+    T1:
+      fasta: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL.fa
+      BISF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISF
+      BISR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISR
+      NEAR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_NEAR
+    T2:
+      fasta: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL.fa
+      BISF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISF
+      BISR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISR
+      NEAR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_NEAR
+    T3:
+      fasta: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL.fa
+      BISF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISF
+      BISR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISR
+      NEAR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_NEAR
+    T4:
+      fasta: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL.fa
+      BISF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISF
+      BISR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_BISR
+      NEAR: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/last/BL_NEAR
+  
+  msuite2:
+    D5: /home/zhangyuanfeng/software/Msuite2_edited/index/BL
+    D6: /home/zhangyuanfeng/software/Msuite2_edited/index/BL
+    F7: /home/zhangyuanfeng/software/Msuite2_edited/index/BL
+    M8: /home/zhangyuanfeng/software/Msuite2_edited/index/BL
+    BC: /home/zhangyuanfeng/software/Msuite2_edited/index/BL
+    BL: /home/zhangyuanfeng/software/Msuite2_edited/index/BL
+    HF: /home/zhangyuanfeng/software/Msuite2_edited/index/BL
+    T1: /home/zhangyuanfeng/software/Msuite2_edited/index/BL
+    T2: /home/zhangyuanfeng/software/Msuite2_edited/index/BL
+    T3: /home/zhangyuanfeng/software/Msuite2_edited/index/BL
+    T4: /home/zhangyuanfeng/software/Msuite2_edited/index/BL
+  pufferfish:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/pufferfish
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/pufferfish
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/pufferfish
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/pufferfish
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/pufferfish
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/pufferfish
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/pufferfish
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/pufferfish
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/pufferfish
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/pufferfish
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/pufferfish
+  sambamba:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/sambamba/BL.fa
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/sambamba/BL.fa
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/sambamba/BL.fa
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/sambamba/BL.fa
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/sambamba/BL.fa
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/sambamba/BL.fa
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/sambamba/BL.fa
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/sambamba/BL.fa
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/sambamba/BL.fa
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/sambamba/BL.fa
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/sambamba/BL.fa
+  samtools:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/bwa-mem/BL.fa
+  segemehl:
+    D5: -i /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.idx -d /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.fa
+    D6: -i /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.idx -d /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.fa
+    F7: -i /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.idx -d /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.fa
+    M8: -i /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.idx -d /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.fa
+    BC: -i /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.idx -d /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.fa
+    BL: -i /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.idx -d /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.fa
+    HF: -i /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.idx -d /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.fa
+    T1: -i /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.idx -d /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.fa
+    T2: -i /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.idx -d /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.fa
+    T3: -i /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.idx -d /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.fa
+    T4: -i /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.idx -d /hot_warm_data/ref/quartet/DNA/custom_genome/BL/segemehl/BL.fa
+  strobealign:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/strobealign/BL.fa
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/strobealign/BL.fa
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/strobealign/BL.fa
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/strobealign/BL.fa
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/strobealign/BL.fa
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/strobealign/BL.fa
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/strobealign/BL.fa
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/strobealign/BL.fa
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/strobealign/BL.fa
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/strobealign/BL.fa
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/strobealign/BL.fa
+  whisper:
+    D5: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/Whisper/BL
+    D6: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/Whisper/BL
+    F7: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/Whisper/BL
+    M8: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/Whisper/BL
+    BC: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/Whisper/BL
+    BL: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/Whisper/BL
+    HF: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/Whisper/BL
+    T1: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/Whisper/BL
+    T2: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/Whisper/BL
+    T3: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/Whisper/BL
+    T4: /hot_warm_data/ref/quartet/DNA/custom_genome/BL/Whisper/BL
+
+abismal:
+  align:
+    extra_params:
+
+astair:
+  align:
+    extra_params:
+  count:
+    extra_params:
+  idbias:
+    extra_params:
+  mbias:
+    extra_params:
+
+aryana:
+  align:
+    extra_params:
+
+batmeth2:
+  align:
+    extra_params:
+
+bio-seq-zip:
+  dedup:
+    extra_params:
+
+biscuit:
+  align:
+    extra_params:
+  pileup:
+    extra_params:
+  vcf2bed:
+    extra_params: -t c -k 5 -e -c
+  qc:
+    extra_params:
+  bsstrand:
+    extra_params:
+  cinread:
+    extra_params:
+
+bismark:
+  align_bowtie2:
+    extra_params: --strandID
+  align_hisat2:
+    extra_params: --strandID
+  exactor:
+    extra_params:
+  coverage2cytosine:
+    extra_params:
+  dedup:
+    extra_params:
+  bam2nuc:
+    extra_params:
+
+bitmapperbs:
+  align:
+    extra_params: --sensitive
+
+bowtie2:
+  align:
+    extra_params: -t -q --sensitive
+bsbolt:
+  align:
+    extra_params:
+
+bsgenova:
+  count:
+    extra_params:
+bsmapz:
+  align:
+    extra_params: -w 100
+
+bwa-meme:
+  extra_params:
+
+bwa-meth:
+  extra_params:
+
+care:
+  calibrate:
+    device: cpu
+    max_mem: 48
+    avg_cov: 30
+    extra_params:
+
+deepvariant:
+  gpu_enabled:
+  container: google/deepvariant:latest
+  docker_sig: docker
+  extra_params:
+
+dnmtools:
+  count:
+    extra_params:
+  levels:
+    extra_params:
+
+dupsifter:
+  dedup:
+    extra_params:
+
+epiallele:
+  container: epialleler:1.17.0
+  docker_sig: docker
+  extra_params:
+
+falco:
+  extra_params:
+
+fame:
+  extra_params: --gzip_reads
+
+fastp:
+  extra_params:
+
+fastqc:
+  extra_params:
+
+gatk:
+  max_mem: 48
+  cal_bqsr:
+    snp_vcf: resources/dbsnp/common.dbsnp.vcf.gz
+    extra_params:
+  apply_bqsr:
+    extra_params:
+  analyze_covariates:
+    extra_params:
+  dedup:
+    extra_params:
+    optical_params: --OPTICAL_DUPLICATE_PIXEL_DISTANCE 2500
+  genotypegvcfs:
+    extra_params:
+  haplotypecaller:
+    dbsnp_file: resources/dbsnp/common.dbsnp.vcf.gz
+    emit_ref_confidence: GVCF
+    genotype_assignment_method: USE_PLS_TO_ASSIGN
+    extra_params:
+gem3:
+  align:
+    extra_params:
+gencore:
+  dedup:
+    supporting_reads: 1
+    score_threshold: 6
+    ratio_threshold: 0.8
+    extra_params:
+hisat-3n:
+  align:
+    extra_params: --sensitive -t -q
+hisat2:
+  align:
+    extra_params: --sensitive -t -q
+
+last:
+  align:
+    extra_params:
+
+lighter:
+  calibrate:
+    extra_params:
+
+methyldackel:
+  count:
+    extra_params:
+  mbias:
+    extra_params:
+
+minirmd:
+  dedup:
+    mismatch_num: 0
+    extra_params:
+
+msuite2:
+  extra_params:
+
+ngs-reads-treatment:
+  dedup:
+    max_mem: 48
+    extra_params:
+
+nubeam-dedup:
+  dedup:
+    extra_params: -r 1
+
+pufferfish:
+  align:
+    extra_params: --allowSoftclip --allowOverhangSoftclip --genomicReads
+
+qualimap:
+  extra_params: --java-mem-size=80G
+
+rastair:
+  mapq: 1
+  base_quality: 10
+  error_model: novaseq6000
+  count:
+    extra_params:
+
+reckoner:
+  calibrate:
+    extra_params:
+
+sambamba:
+  dedup:
+    hash_table_size: 262144
+    overflow_list_size: 200000
+    sort_buffer_size: 128
+    extra_params: 
+
+samtools:
+  fixmate:
+    extra_params:
+  mkdup:
+    extra_params:
+  stats:
+    extra_params:
+  flagstat:
+    extra_params:
+
+segemehl:
+  align:
+    extra_params:
+
+strobealign:
+  align:
+    extra_params: --mcs
+
+trie-dedup:
+  dedup:
+    method: trie
+    extra_params:
+
+trim-galore:
+  extra_params:
+
+whisper:
+  align:
+    extra_params: -store-BAM -gzipped-SAM 9

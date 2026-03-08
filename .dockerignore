@@ -1,0 +1,25 @@
+# Ignore Synology NAS @eaDir folders anywhere
+**/@eaDir/
+@eaDir/
+
+# Ignore Mac OS .DS_Store and __MACOSX folders anywhere
+**/.DS_Store/
+.DS_Store/
+**/__MACOSX/
+__MACOSX/
+
+# Ignore unnecessary files within allowed directories
+**/.git
+**/.gitignore
+**/.gitmodules
+**/.DS_Store
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/.snakemake
+**/results
+
+# Ignore vscode extension directories
+**/.qwen
+**/.code
+**/.qodo

@@ -8,14 +8,14 @@ gem-indexer -i BL.fa -o BL_bisulfite -b -t 64 -v
 gem-indexer -i BL.fa -o BL -t 64 -v
 gem-mapper \
     -I /hot_warm_data/ref/quartet/DNA/custom_genome/BL/gem3/BL_bisulfite.gem \
-    -1 /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM.R1.fq.gz \
-    -2 /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/EM_HF_1_IPM.R2.fq.gz \
+    -1 /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM.R1.fq.gz \
+    -2 /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/EM_HF_1_IPM.R2.fq.gz \
     -r "@RG\tID:1\tSM:sample1\tPL:ILLUMINA\tPU:unit1\tLB:lib1" \
     -p -z -t 64 |\
 samtools sort \
     --output-fmt bam,level=9 \
     -@ 64 \
-    -o /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/gem3_bisulfite.bam
+    -o /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/gem3_bisulfite.bam
 """
 
 

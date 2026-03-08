@@ -20,10 +20,10 @@ abismalidx ./BL.fa BL.abismal_index
 export LD_LIBRARY_PATH=/home/zhangyuanfeng/mambaforge/envs/genomic_tools/lib:$LD_LIBRARY_PATH
 abismal \
     -i /hot_warm_data/ref/quartet/DNA/custom_genome/BL/abismal/BL.abismal_index \
-    -o /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/abismal.bam \
+    -o /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/abismal.bam \
     -t 16 -B \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R1.fq.gz \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R2.fq.gz
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R1.fq.gz \
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R2.fq.gz
 """
 
 rule abismal_align:

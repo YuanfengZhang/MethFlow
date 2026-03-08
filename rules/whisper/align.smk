@@ -6,11 +6,11 @@ from textwrap import dedent
 whisper-index BL BL.fa . ./temp
 whisper -rp \
     -t 24 -store-BAM -gzipped-SAM 9 \
-    -out /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/whisper \
+    -out /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/whisper \
     -temp ./temp \
     /hot_warm_data/ref/quartet/DNA/custom_genome/BL/Whisper/BL \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R1.fq.gz \
-    /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R2.fq.gz
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R1.fq.gz \
+    /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R2.fq.gz
 """
 
 

@@ -3,9 +3,9 @@ from textwrap import dedent
 """
 bsbolt Index -G ./BL.fa -DB .
 bsbolt Align \\
-    -F1 /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R1.fq.gz \
-    -F2 /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R2.fq.gz \
-    -O /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align/BS_HF_1_MX \
+    -F1 /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R1.fq.gz \
+    -F2 /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R2.fq.gz \
+    -O /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align/BS_HF_1_MX \
     -DB /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BSBolt2 \
     -R "@RG ID:1\tSM:sample1\tPL:ILLUMINA\tPU:unit1\tLB:lib1" \
     -UN -OT 8 -t 8

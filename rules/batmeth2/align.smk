@@ -5,11 +5,11 @@ from textwrap import dedent
 BatMeth2 index -g ./BL.fa
 BatMeth2 index_rrbs -g ./BL.fa
 BatMeth2 align \
-    -1 /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R1.fq.gz \
-    -2 /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/input/BS_HF_1_MX.R2.fq.gz \
+    -1 /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R1.fq.gz \
+    -2 /mnt/eqa/zhangyuanfeng/methylation/MethFlow/input/BS_HF_1_MX.R2.fq.gz \
     -g /hot_warm_data/ref/quartet/DNA/custom_genome/BL/BatMeth2/BL.fa \
     -p 16 \
-    -O /mnt/eqa/zhangyuanfeng/methylation/dna_methylation_smk/test/align \
+    -O /mnt/eqa/zhangyuanfeng/methylation/MethFlow/test/align \
     -o batmeth2
 """
 
